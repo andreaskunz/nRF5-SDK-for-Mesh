@@ -12,6 +12,14 @@ set(VERSION_BUGFIX 0)
 set(VERSION_SUFFIX "")
 set(VERSION_STRING "${VERSION_MAJOR}.${VERSION_MINOR}.${VERSION_BUGFIX}${VERSION_SUFFIX}" CACHE STRING "" FORCE)
 
+
+# set flags to support CLion tools
+set(TOOLCHAIN gccarmemb)
+set(PLATFORM nrf52840_xxAA)
+set(BOARD pca10059)
+set(SOFTDEVICE s140_6.1.1)
+
+
 message(STATUS "Configuring CMake for nRF5 SDK for Bluetooth Mesh ${VERSION_STRING}")
 
 set(NRF_MESH_TEST_BUILD 0 CACHE STRING "")
